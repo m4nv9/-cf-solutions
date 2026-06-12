@@ -9,6 +9,8 @@ int main() {
     cin.tie(nullptr);
 
     int n,m; cin>>n>>m;
+    int x; cin>>x;
+    int key = x;
     int arr[n][m];
     for(int i=0;i<n;i++){
       for(int j=0;j<m;j++){
@@ -17,11 +19,12 @@ int main() {
     }
    bool flag = false;
     //search
-    int x; cin>>x;
-    int key = x;
     for(int i=0;i<n;i++){
       for(int j=0;j<m;j++){
-        if(arr[i][j]==key) flag=true;
+        if(arr[i][j]==key){
+          flag = true;
+          break;
+        }
       }
     }
     if(flag==true) cout<<"true";
