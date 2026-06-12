@@ -1,0 +1,4 @@
+# Ignore all compiled executables without extensions (Mac/Linux default)
+*
+!*.*
+!.gitignore
