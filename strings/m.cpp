@@ -16,11 +16,11 @@ int main() {
     bool isPalindrome = true;  
 
     while(i<j){
-      if(s[i]!=s[j]){
-            isPalindrome = false;
-            break;
+      if(s[i]!=s[j]){ //check if the current value where both pointers at are equal
+            isPalindrome = false; //if not, not palindrome
+            break; 
             }
-            else{
+            else{ //when pointers are equal, move the i forward and j backwards
               i++;
               j--;
             }
