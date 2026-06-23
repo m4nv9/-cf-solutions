@@ -1,3 +1,4 @@
+//position in an array
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -7,24 +8,17 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n; cin>>n;
-    ll arr[n];
+    int n; cin>>n;
+    int A[n];
     for(int i=0;i<n;i++){
-      cin>>arr[i];
+      cin>>A[i];
     }
 
-    int x; cin>>x;
-
-    int loc = -1;
-    int count = 0;
     for(int i=0;i<n;i++){
-      if(arr[i]==x){
-      loc = i;
-      break;
+      if(A[i]<=10){
+        cout<<"A["<<i<<"] = "<<A[i]<<"\n";
       }
     }
-
-    cout<<loc;
 
     return 0;
 }
